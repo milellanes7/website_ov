@@ -352,41 +352,73 @@ footer p {
     margin: 10px 0;
 }
 
-
 /* HTML NOSOTROS */
 
-.portada-nosotros {
-    position: relative;
-    text-align: center;
+.grupo-trabajo {
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 
-.portada-nosotros img {
+.imagen-grupo {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.imagen-grupo img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
+    margin: 20px 0;
 }
 
-.texto-portada-nosotros {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.texto-grupo {
+    flex: 2;
 }
 
-.texto-portada-nosotros h1 {
-    margin: 0;
-    font-size: 45px;
+.texto-grupo h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ad3da6, #ef7a0f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    line-height: 1;
+    margin-bottom: 20px;
 }
 
-.texto-portada-nosotros p {
-    margin: 10px 0 0;
-    font-size: 28px;
+.texto-grupo p {
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 1.1;
 }
 
-/* Contenido */
-.contenido-nosotros {
+.titulo-nosotros {
+    font-size: 3rem;
+    color: #ad3da6;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.texto-izquierda {
     padding: 20px;
+    text-align: left;
+}
+
+.texto-izquierda h3 {
+    font-size: 1.8rem;
+    color: #ad3da6;
+    margin-bottom: 10px;
+}
+
+.texto-izquierda p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contenido-nosotros {
+    padding: 15px;
 }
 
 .bloque {
@@ -396,22 +428,9 @@ footer p {
 }
 
 .bloque img {
-    width: 40%;
+    width: 60%;
     height: auto;
     border-radius: 5px;
-}
-
-.texto-derecha, .texto-izquierda {
-    width: 60%;
-    padding: 20px;
-    text-align: left;
-}
-
-.titulo-nosotros {
-    text-align: center;
-    margin: 40px 0 20px;
-    font-size: 38px;
-    color: #333;
 }
 
 /* HTML CLIENTES */

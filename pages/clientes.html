@@ -5,68 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Clientes</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- FAVICON -->
+     <link rel="shortcut icon" href="../img/logo_ov.png" type="image/x-icon">
+    <title>Otra Visión</title>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <nav>
+    <header class="bg-white shadow-sm">
+        <nav class="container">
             <div class="logo">
                 <img src="../img/logo_ov.png" alt="logo de consultora otra vision">
             </div>
-            <ul class="nav-menu">
-                <li>
-                    <a href="../index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="../pages/servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a href="../pages/nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="../pages/clientes.html">CLIENTES</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">CONTACTO</a>
-                </li>
+            <ul class="nav">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../pages/servicios.html">SERVICIOS</a></li>
+                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                <li><a href="../pages/clientes.html">CLIENTES</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
             </ul>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/tu-perfil" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/tu-perfil" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/tu-numero" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
         </nav>
     </header>
 
+    <!-- Section de clientes -->
     <main>
         <section class="clientes">
-            <h1>NUESTROS CLIENTES</h1>
+            <h1>Algunos Clientes & Colaboradores</h1>
+            <p>Estos son algunos de los clientes con los que tenemos el honor de colaborar, brindando soluciones a medida para su crecimiento</p>
+
             <div class="galeria-clientes">
-                <div class="cliente">
-                    <img src="../img/cliente-uno.png" alt="Cliente 1">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, incidunt distinctio nobis dicta, debitis esse, perferendis atque officiis veritatis ipsa maiores asperiores. Similique, at repellendus veniam provident et ut aliquid facilis fugit quia reiciendis beatae autem animi itaque enim magnam alias laudantium dolore assumenda. Adipisci, ab? Ducimus consequatur quos quis?</p>
+
+                <!-- Primera fila de clientes -->
+                <div class="fila-clientes">
+                    <img src="../img/cliente1.jpg" alt="Cliente 1">
+                    <img src="../img/cliente2.webp" alt="Cliente 2">
+                    <img src="../img/cliente3.webp" alt="Cliente 3">
+                    <img src="../img/cliente4.png" alt="Cliente 4">
+                    <img src="../img/cliente5.png" alt="Cliente 5">
                 </div>
-                <div class="cliente">
-                    <img src="../img/cliente-dos.png" alt="Cliente 2">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex tempora blanditiis explicabo ratione voluptates reiciendis corrupti, earum laborum, voluptate fugit modi non labore at quam nisi assumenda ipsa expedita corporis ullam aperiam molestias? Ipsam dolore nesciunt autem, repellat, nobis perferendis quibusdam minus asperiores rem temporibus amet voluptatibus quam aut libero.</p>
+
+                <!-- Segunfa fila de clientes -->
+                <div class="fila-clientes">
+                    <img src="../img/cliente6.jpg" alt="Cliente 6">
+                    <img src="../img/cliente7.jpg" alt="Cliente 7">
+                    <img src="../img/cliente8.jpg" alt="Cliente 8">
+                    <img src="../img/cliente9.png" alt="Cliente 9">
+                    <img src="../img/cliente10.jpg" alt="Cliente 10">
                 </div>
-                <div class="cliente">
-                    <img src="../img/cliente-tres.png" alt="Cliente 3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam temporibus numquam. Enim vero distinctio rem rerum sequi, ex at possimus in fugit sint eos facilis, harum cumque itaque natus, non molestiae nesciunt commodi voluptate! Minus, dicta? Ea nesciunt voluptatibus vero quae perspiciatis necessitatibus ullam dolorem minus, consequuntur odit voluptatem.</p>
+                
+                <!-- Tercera fila de clientes -->
+                <div class="fila-clientes">
+                    <img src="../img/cliente11.png" alt="Cliente 11">
+                    <img src="../img/cliente12.png" alt="Cliente 12">
+                    <img src="../img/cliente13.png" alt="Cliente 13">
+                    <img src="../img/cliente14.jpg" alt="Cliente 14">
+                    <img src="../img/cliente15.jpg" alt="Cliente 15">
                 </div>
-                <div class="cliente">
-                    <img src="../img/cliente-cuatro.png" alt="Cliente 4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, totam minima eum assumenda nesciunt expedita laborum unde porro aperiam maxime officiis cupiditate eaque dolor amet rerum alias similique magnam incidunt illo, sunt fugit, atque dolores. Praesentium quasi maiores neque distinctio minima, alias fuga similique commodi non asperiores, repellat minus aliquam.</p>
-                </div>
+                
             </div>
         </section>
     </main>
 
-    <footer>
+    <section class="testimonios-clientes">
+        <h2>Lo que nuestros clientes dicen</h2>
+        <div class="testimonio">
+            <p>"La colaboración con Otra Visión ha sido fundamental para el crecimiento de nuestra empresa."</p>
+            <span>- CEO de Adidas</span>
+        </div>
+        <div class="testimonio">
+            <p>"Gracias a Otra Visión, mejoramos nuestras estrategias de ventas y aumentamos nuestra eficiencia."</p>
+            <span>- Director de Marketing de Coca Cola</span>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="container-footer">
         <div class="footer-parte1">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="#" class="boton">Ver más</a>
+            <h2>Conectamos innovación con eficiencia para mejorar tu negocio.</h2>
+            <a href="#" class="boton">Contáctanos</a>
         </div>
         <div class="footer-parte2">
-            <p>1234-5678</p>
-            <p>1234-5678</p>
-            <p>contacto@consultora_ov.com</p>
+            <p>Contactanos</p>
+            <div class="contacto-footer">
+                <p><i class="fas fa-phone"></i>35449348384</p>
+                <p><i class="fab fa-whatsapp"></i>9348924824</p>
+                <p><i class="fas fa-envelope"></i>info@consultoraotravision.com</p>
+            </div>
         </div>
     </footer>
     

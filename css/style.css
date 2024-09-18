@@ -44,7 +44,6 @@ header {
 
 header .logo img {
     height: 70px;
-    width: auto;
 }
 
 header nav {
@@ -436,31 +435,57 @@ footer p {
 /* HTML CLIENTES */
 
 .clientes h1 {
+    font-size: 2.5rem;
     text-align: center;
-    margin: 30px 0;
-    font-size: 50px;
+    margin-top: 120px;
     color: #333;
+    font-weight: bold;
 }
+
+.clientes p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+} 
 
 .galeria-clientes {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    padding-bottom: 40px; 
+    max-width: 100%;
 }
 
-.cliente {
+.fila-clientes img {
+    width: 15%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    margin: 0 35px;
+    justify-content: space-around;
+}
+
+.fila-clientes img:hover {
+    transform: scale(1.1);
+}
+
+
+.testimonios-clientes {
+    padding: 40px;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
-.cliente img {
-    width: 350px;
-    height: auto;
-    margin-bottom: 10px;
+.testimonios-clientes h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.cliente p {
-    font-size: 15px;
+.testimonio {
+    margin-bottom: 30px;
+}
+
+.testimonio p {
+    font-style: italic;
     color: #333;
 }
 

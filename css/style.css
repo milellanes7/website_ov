@@ -468,27 +468,6 @@ footer p {
     transform: scale(1.1);
 }
 
-
-.testimonios-clientes {
-    padding: 40px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.testimonios-clientes h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.testimonio {
-    margin-bottom: 30px;
-}
-
-.testimonio p {
-    font-style: italic;
-    color: #333;
-}
-
 /* HTML CONTACTO */
 
 .contacto h1 {

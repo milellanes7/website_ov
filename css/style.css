@@ -621,7 +621,26 @@ footer p {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
+    .navbar-brand {
+        margin-right: auto;
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+        flex-direction: column;
+        text-align: center;
+    }
     
+    .navbar-nav  li {
+        margin: 5px 0;
+    }
+
+    .redes-sociales {
+        display: flex;
+        margin-left: auto;
+        justify-content: center;
+    }
 
     .texto-portada {
         left: 60px;

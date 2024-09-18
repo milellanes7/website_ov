@@ -549,5 +549,14 @@ footer p {
         margin: 10px 0;
     }
 
-    
+    .texto-portada {
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 100%;
+    }
+
+    .titulo-portada {
+        font-size: 3.5rem;
+    }
 }

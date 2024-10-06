@@ -1,0 +1,33 @@
+ /* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    padding: 0px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .navbar-brand {
+        margin-right: auto;
+      }
+      .navbar-nav {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+      }
+    }
+    .redes-sociales {
+      display: flex;
+      margin-left: auto;
+    }  
+}

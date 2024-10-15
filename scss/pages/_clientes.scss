@@ -1,0 +1,31 @@
+.clientes {
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 120px;
+    color: $quinto-color;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.1rem;
+    color: $quinto-color;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .galeria-clientes {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    padding-bottom: 40px; 
+    max-width: 90%;
+    .fila-clientes img {
+      width: 90%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+      margin: 0 20px;
+      justify-content: space-around;
+    }
+    .fila-clientes img:hover {
+      transform: scale(1.1);
+    }
+  }
+}

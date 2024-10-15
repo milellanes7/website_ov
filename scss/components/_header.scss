@@ -1,11 +1,9 @@
- /* Header */
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Montserrat", sans-serif;
-    background-color: #ffffff;
+    background-color: $septimo-color;
     padding: 0px 20px;
     position: fixed;
     top: 0;

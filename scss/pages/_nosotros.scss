@@ -1,0 +1,70 @@
+.portada {
+    margin-top: 10px;
+}
+
+.grupo-trabajo {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    .imagen-grupo {
+        flex: 2;
+        margin-right: 20px;
+    }
+    .imagen-grupo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 20px 0;
+    }
+    .texto-grupo {
+        flex: 2;
+        h2 {
+            font-size: 4rem;
+            font-weight: bold;
+            background: linear-gradient(to right, $primer-color, $segundo-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.4rem;
+            color: $quinto-color;
+            line-height: 1.1;
+        }
+    }
+}
+  
+.contenido-nosotros {
+    padding: 15px;
+    .titulo-nosotros {
+        font-size: 3rem;
+        color: $primer-color;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .bloque {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        .texto-izquierda {
+            padding: 20px;
+            text-align: left;
+            h3 {
+                font-size: 1.8rem;
+                color: $primer-color;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+        }
+        img {
+            width: 60%;
+            height: auto;
+            border-radius: 5px;
+        }
+    }
+}

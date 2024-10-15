@@ -1,0 +1,37 @@
+.container {
+    .contacto {
+      h1 {
+        font-size: 2.6rem;
+        text-align: center;
+        margin-top: 120px;
+        color: $quinto-color;
+        font-weight: bold;
+      }
+      p {
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+      }
+      .row {
+        .col-md-8 {
+          .formulario-contacto {
+            background-color: $cuarto-color;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            .mb-3 {
+              .form-label i {
+                color: $segundo-color;
+                margin-right: 8px;
+              }
+              input, textarea {
+                border: 2px solid $segundo-color;
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

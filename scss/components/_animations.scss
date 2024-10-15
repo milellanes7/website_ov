@@ -2,13 +2,13 @@
 header {
   .redes-sociales {
     a {
-      color: #ad3da6;
+      color: $primer-color;
       font-size: 24px;
       margin-right: 15px;
       transition: color 0.3s ease;
 
       &:hover {
-        color: #ef7a0f;
+        color: $segundo-color;
       }
   
       &:last-child {
@@ -20,11 +20,11 @@ header {
 
 /* Portada */
 .texto-portada {
-  .boton {
+  .boton-portada {
     transition: color 0.3s ease;
     &:hover {
-      background-color: #ef7a0f;
-      color: #ffffff;
+      background-color: $segundo-color;
+      color: $tercer-color;
     }
   }
 }
@@ -39,10 +39,35 @@ header {
   }
 }
 
+/* Botón */
+.boton {
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $sexto-color;
+  }
+}
+
+.formulario-contacto .btn {
+  &:hover {
+    background-color: $segundo-color;
+  }
+}
+
 /* Galeria */
 .galeria-index img {
   transition: transform 0.3s ease;
 }
 .galeria-index img:hover {
   transform: scale(1.05);
+}
+
+/* SERVICIOS */
+.servicio {
+  transition: all 0.3s ease;
+}
+
+.servicio:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
 }

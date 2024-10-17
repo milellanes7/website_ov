@@ -1,27 +1,24 @@
+/* ===================================================================== */
+/* BOTONES*/
+/* ===================================================================== */
+
 .boton {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: $segundo-color;
-    color: $tercer-color;
-    text-decoration: none;
-    border-radius: 5px;
+  @include boton($border-r: 5px);
 }
 
-.boton-portada {
-  display: inline-block;
-  padding: 10px 20px;
-  color: $tercer-color;
-  border: 2px solid $segundo-color;
-  background-color: transparent;
-  text-decoration: none;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  font-weight: bold;
+.boton2 {
+  @include boton(
+    $background: $octavo-color, 
+    $border-r: 5px, 
+    $border: 2px solid $segundo-color, 
+    $font-weight: bold
+    );
 }
 
-.formulario-contacto .btn {
-  color: $quinto-color;
-  border: 2px solid $segundo-color;
-  background-color: transparent;
+.boton3 {
+  @include boton(
+    $color: $quinto-color,
+    $background: $octavo-color,
+    $border: 2px solid $segundo-color
+  );
 }

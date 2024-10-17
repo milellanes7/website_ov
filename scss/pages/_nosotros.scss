@@ -1,3 +1,7 @@
+/* ===================================================================== */
+/* html NOSOTROS*/
+/* ===================================================================== */
+
 .portada {
     margin-top: 10px;
 }
@@ -19,7 +23,7 @@
     .texto-grupo {
         flex: 2;
         h2 {
-            font-size: 4rem;
+            font-size: $segundo-tamanio;
             font-weight: bold;
             background: linear-gradient(to right, $primer-color, $segundo-color);
             -webkit-background-clip: text;
@@ -28,7 +32,7 @@
             margin-bottom: 20px;
         }
         p {
-            font-size: 1.4rem;
+            font-size: $septimo-tamanio;
             color: $quinto-color;
             line-height: 1.1;
         }
@@ -38,7 +42,7 @@
 .contenido-nosotros {
     padding: 15px;
     .titulo-nosotros {
-        font-size: 3rem;
+        font-size: $tercer-tamanio;
         color: $primer-color;
         text-align: center;
         margin-top: 15px;
@@ -51,13 +55,13 @@
         .texto-izquierda {
             padding: 20px;
             text-align: left;
-            h3 {
-                font-size: 1.8rem;
+            h2 {
+                font-size: $sexto-tamanio;
                 color: $primer-color;
                 margin-bottom: 10px;
             }
             p {
-                font-size: 1.2rem;
+                font-size: $septimo-tamanio;
                 margin-bottom: 20px;
             }
         }

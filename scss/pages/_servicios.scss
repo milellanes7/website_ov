@@ -1,7 +1,11 @@
+/* ===================================================================== */
+/* html SERVICIOS*/
+/* ===================================================================== */
+
 .section-servicios {
     padding: 60px 0;
     h1 {
-        font-size: 2.5rem;
+        font-size: $cuarto-tamanio;
         text-align: center;
         color: $quinto-color;
         font-weight: bold;
@@ -22,13 +26,12 @@
         object-fit: cover;
     }
     h2 {
-        font-size: 1.7rem;
+        font-size: $sexto-tamanio;
         color: $segundo-color;
         margin-top: 15px;
         font-weight: bold;
     }
     p {
-        font-size: 1rem;
         margin: 15px 0;
         color: $quinto-color;
     }

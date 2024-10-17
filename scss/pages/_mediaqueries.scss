@@ -1,7 +1,11 @@
-/* Smartphones */
+/* ===================================================================== */
+/* MEDIAQUERIES*/
+/* ===================================================================== */
+
+/* 1. Smartphone Pequeño */
+
 @include media("smartphone-pequeño") {
   /* Header */
-
   .navbar-toggler {
     border: none;
   }
@@ -16,7 +20,7 @@
     justify-content: center;
     align-items: center;
     .nav-item {
-      font-size: .8rem;
+      font-size: $octavo-tamanio;
     }
   }
 
@@ -35,248 +39,263 @@
   }
 
   /* Index - Portada*/
-  .portada {
-    margin-top: 80px;
-  }
   .portada .texto-portada {
     left: 5%;
     max-width: 90%;
   }
   .portada .texto-portada .titulo-portada {
-    font-size: 1.6rem;
+    font-size: $sexto-tamanio;
     margin-bottom: 10px;
     letter-spacing: -.7px;
   }
   .portada .texto-portada p {
-    font-size: 1rem;
-    max-width: 90%;
+    font-size: $octavo-tamanio;
+    max-width: 100%;
     margin-bottom: 10px;
   }
-  .portada .boton-portada {
-    padding: 6px 6px;
-    color: white;
-    font-size: .5rem;
+  .portada .boton2 {
+    padding: 7px 7px;
+    color: $tercer-color;
+    font-size: $octavo-tamanio;
+  }
+
+  /* Index - Rectangulos */
+  
+  .seccion-tres-rectangulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .seccion-tres-rectangulos .rectangulo {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .seccion-tres-rectangulos .rectangulo.rectangulo h3 {
+    font-size: $septimo-tamanio;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .seccion-tres-rectangulos .rectangulo.rectangulo p {
+    margin-bottom: 10px;
+    font-size: $octavo-tamanio;
+  }
+
+  /* Index - Párrafos */
+  
+  .parrafo-index {
+    flex-direction: column;
+  }
+
+  .parrafo-index .texto-izquierdo {
+    width: 100%;
+    text-align: center;
+    font-size: $sexto-tamanio;
+  }
+
+  .parrafo-index .texto-derecho {
+    width: 100%;
+    text-align: center;
+    font-size: $octavo-tamanio;
+  }
+
+  /* Index - Galeria */
+
+  .galeria-index {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 40px;
+    background-color: $cuarto-color;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  .container-footer .footer-parte1, .footer-parte2 {
+    width: 100%;
+  }
+
+  .container-footer .footer-parte1 {
+    margin: 10px;
+    padding: 0 30px;
+  }
+
+  .container-footer .footer-parte1 h2 {
+    font-size: $quinto-tamanio;
+    margin-bottom: 15px;
+  }
+
+  .container-footer .footer-parte1 .boton {
+    font-size: $octavo-tamanio;
+    padding: 10px 25px;
+    border-radius: 8px;
+  }
+
+  .container-footer .footer-parte2 {
+    width: 100%;
+    margin: 15px;
+    padding: 0 30px;
+  }
+
+  .container-footer .footer-parte2 p {
+    font-size: $sexto-tamanio;
+    margin-bottom: 15px;
+  }
+
+  .container-footer .footer-parte2 .contacto-footer p {
+    font-size: $octavo-tamanio;
+  }
+
+  /* Servicios */
+
+  .section-servicios h1 {
+    font-size: $sexto-tamanio;
   }
   
-    /* Index - Section Rectángulos */
-  
-    .seccion-tres-rectangulos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px 0;
-      text-align: center;
+  .servicio {
+    img {
+      height: 200px;
     }
-    .seccion-tres-rectangulos .rectangulo {
-      width: 90%;
-      margin-bottom: 10px;
-      padding: 10px;
-    }
-    .seccion-tres-rectangulos .rectangulo.rectangulo h3 {
-      font-size: 1.3rem;
-      font-weight: bold;
+    h2 {
+      font-size: $septimo-tamanio;
       margin-top: 10px;
     }
-    .seccion-tres-rectangulos .rectangulo.rectangulo p {
-      margin-bottom: 10px;
-      font-size: .9rem;
+    p {
+      font-size: $octavo-tamanio;
+      margin: 5px 0;
     }
-  
-    /* Index - Section párrafos */
-    .parrafo-index {
-      flex-direction: column;
+    .boton {
+      font-size: $octavo-tamanio;
+      font-weight: normal;
     }
-  
-    .parrafo-index .texto-izquierdo {
-      width: 100%;
+  }
+
+  /* Nosotros */
+
+  .grupo-trabajo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    .imagen-grupo {
+        margin-right: 0px;
+    }
+    .imagen-grupo img {
+        margin: 10px 0;
+    }
+    .texto-grupo {
       text-align: center;
-      font-size: 1.8rem;
-    }
-  
-    .parrafo-index .texto-derecho {
-      width: 100%;
-      text-align: center;
-      font-size: .9rem;
-    }
-
-    /* Galeria */
-
-    .galeria-index {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 10px;
-      padding: 40px;
-      background-color: $cuarto-color;
-      max-width: 100%;
-      margin: 0 auto;
-    }
-  
-    /* Footer */
-  
-    .container-footer {
-      flex-direction: column;
-      align-items: center;
-      text-align: left;
-      padding: 30px 30px;
-    }
-  
-    .container-footer .footer-parte1, .footer-parte2 {
-      width: 100%;
-      margin-bottom: 0;
-    }
-
-    .container-footer .footer-parte1 {
-      margin: 0;
-      padding: 0 0;
-    }
-  
-    .container-footer .footer-parte1 h2 {
-      font-size: 2.4rem;
-    }
-  
-    .container-footer .footer-parte2 p {
-      font-size: 1.3rem;
-    }
-
-    .container-footer .footer-parte2 .contacto-footer p {
-      font-size: .9rem;
-    }
-
-    /* Servicios */
-    .section-servicios h1 {
-      font-size: 1.7rem;
-    }
-    
-    .servicio {
-      img {
-        height: 200px;
-      }
-      h2 {
-        font-size: 1.3rem;
-        margin-top: 10px;
-      }
-      p {
-        font-size: .9rem;
-        margin: 5px 0;
-      }
-      .btn {
-        font-size: .9rem;
-        font-weight: normal;
-      }
-    }
-
-    /* Nosotros */
-  
-    .grupo-trabajo {
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-      .imagen-grupo {
-          margin-right: 0px;
-      }
-      .imagen-grupo img {
-          margin: 10px 0;
-      }
-      .texto-grupo {
-        text-align: center;
-          h2 {
-              font-size: 1.9rem;
-              margin-bottom: 10px;
-          }
-          p {
-              font-size: .9rem;
-          }
-      }
-    }
-    
-    .contenido-nosotros {
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      .titulo-nosotros {
-          font-size: 1.6rem;
-          margin-top: 0;
-          margin-bottom: 0;
-      }
-      .bloque {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-bottom: 10px;
-          .texto-izquierda {
-              text-align: center;
-              padding: 5px;
-              h3 {
-                  font-size: 1.2rem;
-                  color: $primer-color;
-                  margin-bottom: 5px;
-              }
-              p {
-                  font-size: .8rem;
-                  margin-bottom: 5px;
-              }
-          }
-          img {
-              width: 90%;
-          }
-      }
-    }
-
-    /* Clientes */
-
-    .clientes {
-      h1 {
-        font-size: 1.7rem;
-      }
-      p {
-        font-size: .9rem;
-        padding: 0 15px;
-      }
-      .galeria-clientes {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
-        padding-left: 15px;
-        .fila-clientes {
-          display: contents;
-        }
-        .fila-clientes img {
-          width: 100%; 
-          margin: 0; 
-          object-fit: cover; 
-          height: 100px;
-        }
-      }
-    }
-
-    /* Contacto */
-    .container {
-      .contacto {
-        h1 {
-          font-size: 1.7rem;
+        h2 {
+            font-size: $quinto-tamanio;
+            margin-bottom: 10px;
         }
         p {
-          padding: 0 5px 10px 5px;
+            font-size: $octavo-tamanio;
         }
-        .row {
-          .col-md-8 {
-            .formulario-contacto {
-              .mb-3 {
-                .form-label {
-                  font-size: .9rem;
-                }
-                .form-label i {
-                  font-size: .8rem;
-                }
-                input, textarea {
-                  font-size: .8rem;
-                }
+    }
+  }
+  
+  .contenido-nosotros {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    .titulo-nosotros {
+        font-size: $sexto-tamanio;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .bloque {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        .texto-izquierda {
+            text-align: center;
+            padding: 5px;
+            h3 {
+                font-size: $septimo-tamanio;
+                color: $primer-color;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: $octavo-tamanio;
+                margin-bottom: 5px;
+            }
+        }
+        img {
+            width: 90%;
+        }
+    }
+  }
+
+  /* Clientes */
+
+  .clientes {
+    h1 {
+      font-size: $sexto-tamanio;
+    }
+    p {
+      font-size: $octavo-tamanio;
+      padding: 0 15px;
+    }
+    .galeria-clientes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+      padding-left: 15px;
+      .fila-clientes {
+        display: contents;
+      }
+      .fila-clientes img {
+        width: 100%; 
+        margin: 0; 
+        object-fit: cover; 
+        height: 100px;
+      }
+    }
+  }
+
+  /* Contacto */
+
+  .container {
+    .contacto {
+      h1 {
+        font-size: $sexto-tamanio;
+      }
+      p {
+        padding: 0 5px 10px 5px;
+      }
+      .row {
+        .col-md-8 {
+          .formulario-contacto {
+            .mb-3 {
+              .form-label {
+                font-size: $octavo-tamanio;
+              }
+              .form-label i {
+                font-size: $octavo-tamanio;
+              }
+              input, textarea {
+                font-size: $octavo-tamanio;
               }
             }
           }
         }
       }
     }
+  }
 }
+
+/* 2. Smartphone Grande */
 
 @include media("smartphone-grande") {
   /* Header */
@@ -295,7 +314,7 @@
     justify-content: center;
     align-items: center;
     .nav-item {
-      font-size: 1rem;
+      font-size: $septimo-tamanio;
     }
   }
 
@@ -322,19 +341,19 @@
     max-width: 90%;
   }
   .portada .texto-portada .titulo-portada {
-    font-size: 2.7rem;
+    font-size: $tercer-tamanio;
     margin-bottom: 10px;
     letter-spacing: -.7px;
   }
   .portada .texto-portada p {
-    font-size: 1.4rem;
+    font-size: $sexto-tamanio;
     max-width: 90%;
     margin-bottom: 10px;
   }
-  .portada .boton {
+  .portada .boton2 {
     padding: 9px 9px;
     color: white;
-    font-size: .9rem;
+    font-size: $septimo-tamanio;
   }
 
   /* Index - Section Rectángulos */
@@ -352,13 +371,13 @@
     padding: 30px;
   }
   .seccion-tres-rectangulos .rectangulo.rectangulo h3 {
-    font-size: 1.8rem;
+    font-size: $sexto-tamanio;
     font-weight: bold;
     margin-top: 15px;
   }
   .seccion-tres-rectangulos .rectangulo.rectangulo p {
     margin-bottom: 15px;
-    font-size: 1.2rem;
+    font-size: $septimo-tamanio;
   }
 
   /* Index - Section párrafos */
@@ -369,41 +388,59 @@
   .parrafo-index .texto-izquierdo {
     width: 100%;
     text-align: center;
-    font-size: 2.3rem;
+    font-size: $cuarto-tamanio;
   }
 
   .parrafo-index .texto-derecho {
     width: 100%;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: $septimo-tamanio;
   }
 
-  /* Index - Footer */
+  /* Footer */
 
   .container-footer {
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    padding: 30px 30px;
+    padding: 10px 10px;
   }
 
   .container-footer .footer-parte1, .footer-parte2 {
     width: 100%;
-    margin-bottom: 5px;
+  }
+
+  .container-footer .footer-parte1 {
+    margin: 10px;
+    padding: 0 30px;
   }
 
   .container-footer .footer-parte1 h2 {
-    font-size: 2.8rem;
+    font-size: $tercer-tamanio;
+  }
+
+  .container-footer .footer-parte2 {
+    width: 100%;
+    margin: 15px;
+    padding: 0 30px;
   }
 
   .container-footer .footer-parte2 p {
-    font-size: 1.3rem;
+    font-size: $sexto-tamanio;
     margin-bottom: 7px;
   }
 
+  .container-footer .footer-parte2 .contacto-footer p {
+    font-size: $septimo-tamanio;
+  }
+
   /* Servicios */
+
+  .section-servicios {
+    margin-top: 2rem;
+  }
+
   .section-servicios h1 {
-    font-size: 1.7rem;
+    font-size: $quinto-tamanio;
   }
   
   .servicio {
@@ -411,26 +448,83 @@
         height: 250px;
     }
     h2 {
-        font-size: 1.8rem;
+        font-size: $sexto-tamanio;
         margin-top: 5px;
+        margin-bottom: 0;
     }
     p {
-        font-size: 1.1rem;
-        margin: 10px 0;
+        font-size: $septimo-tamanio;
     }
-    .btn {
-      font-size: 1.1rem;
+    .boton {
+      font-size: $octavo-tamanio;
       font-weight: normal;
+    }
+  }
+
+  /* Nosotros */
+
+  .grupo-trabajo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    .imagen-grupo {
+        margin-right: 0px;
+    }
+    .imagen-grupo img {
+        margin: 15px 0;
+    }
+    .texto-grupo {
+      text-align: center;
+        h2 {
+            font-size: $tercer-tamanio;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: $sexto-tamanio;
+        }
+    }
+  }
+  
+  .contenido-nosotros {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    .titulo-nosotros {
+        font-size: $quinto-tamanio;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .bloque {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        .texto-izquierda {
+            text-align: center;
+            padding: 5px;
+            h3 {
+                font-size: $sexto-tamanio;
+                color: $primer-color;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: $septimo-tamanio;
+                margin-bottom: 5px;
+            }
+        }
+        img {
+            width: 90%;
+        }
     }
   }
 
   /* Clientes */
   .clientes {
     h1 {
-      font-size: 1.9rem;
+      font-size: $quinto-tamanio;
     }
     p {
-      font-size: 1.1rem;
+      font-size: $octavo-tamanio;
       padding: 0 15px;
     }
     .galeria-clientes {
@@ -453,10 +547,10 @@
   .container {
     .contacto {
       h1 {
-        font-size: 2rem;
+        font-size: $quinto-tamanio;
       }
       p {
-        font-size: 1.4rem;
+        font-size: $septimo-tamanio;
         padding: 0 5px 10px 5px;
       }
       .row {
@@ -464,13 +558,13 @@
           .formulario-contacto {
             .mb-3 {
               .form-label {
-                font-size: 1.2rem;
+                font-size: $septimo-tamanio;
               }
               .form-label i {
-                font-size: 1.1rem;
+                font-size: $septimo-tamanio;
               }
               input, textarea {
-                font-size: 1.1rem;
+                font-size: $septimo-tamanio;
               }
             }
           }
@@ -479,6 +573,8 @@
     }
   }
 }
+
+/* 3. Tablet */
 
 @include media("tablet") {
   /* Header */
@@ -497,7 +593,7 @@
     justify-content: center;
     align-items: center;
     .nav-item {
-      font-size: 1.1rem;
+      font-size: $sexto-tamanio;
     }
   }
 
@@ -506,8 +602,8 @@
     justify-content: center;
     a {
       .fab {
-        width: 15px;
-        height: 15px;
+        width: 30px;
+        height: 30px;
       }
       .fa-instagram {
         padding-right: 17px;
@@ -524,18 +620,18 @@
     max-width: 90%;
   }
   .portada .texto-portada .titulo-portada {
-    font-size: 4rem;
+    font-size: $segundo-tamanio;
     margin-bottom: 15px;
     letter-spacing: -.7px;
   }
   .portada .texto-portada p {
-    font-size: 1.8rem;
+    font-size: $quinto-tamanio;
     max-width: 90%;
     margin-bottom: 15px;
   }
-  .portada .boton {
+  .portada .boton2 {
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: $septimo-tamanio;
   }
 
   /* Index - Section Rectángulos */
@@ -544,7 +640,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 0 0 0;
+    padding-top: 30px;
     margin-top: 10px;
     text-align: center;
   }
@@ -554,17 +650,17 @@
     padding: 30px;
   }
   .seccion-tres-rectangulos .rectangulo.rectangulo h3 {
-    font-size: 2.5rem;
+    font-size: $cuarto-tamanio;
     font-weight: bold;
     margin-top: 15px;
   }
   .seccion-tres-rectangulos .rectangulo.rectangulo p {
     margin-bottom: 15px;
-    font-size: 1.8rem;
+    font-size: $quinto-tamanio;
   }
 
   .seccion-tres-rectangulos .rectangulo.rectangulo .boton {
-    font-size: 1.5rem;
+    font-size: $septimo-tamanio;
     padding: 20px 40px;
     border-radius: 8px;
   }
@@ -577,21 +673,21 @@
   .parrafo-index .texto-izquierdo {
     width: 100%;
     text-align: center;
-    font-size: 3.2rem;
+    font-size: $tercer-tamanio;
   }
 
   .parrafo-index .texto-derecho {
     width: 100%;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: $sexto-tamanio;
   }
 
   /* Index - Galeria */
   .galeria-index {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 5px;
+    padding: 10px;
   }
   
   .galeria-index img {
@@ -601,7 +697,7 @@
     border-radius: 10px;
   }
 
-  /* Index - Footer */
+  /* Footer */
 
   .container-footer {
     flex-direction: column;
@@ -612,34 +708,64 @@
 
   .container-footer .footer-parte1, .footer-parte2 {
     width: 100%;
-    margin-bottom: 15px;
+  }
+
+  .container-footer .footer-parte1 {
+    margin: 10px;
+    padding: 0 30px;
   }
 
   .container-footer .footer-parte1 h2 {
-    font-size: 3.5rem;
+    font-size: $segundo-tamanio;
+    margin-bottom: 20px;
   }
 
   .container-footer .footer-parte1 .boton {
-    font-size: 1.3rem;
+    font-size: $sexto-tamanio;
     padding: 15px 30px;
     border-radius: 8px;
   }
 
-  .container-footer .footer-parte2 p {
-    font-size: 1.7rem;
-    margin-bottom: 10px;
+  .container-footer .footer-parte2 {
+    width: 100%;
+    margin: 15px;
+    padding: 0 30px;
   }
 
-  .section-servicios .servicio {
-    padding: 0px;
+  .container-footer .footer-parte2 p {
+    font-size: $cuarto-tamanio;
+    margin-bottom: 15px;
+  }
+
+  .container-footer .footer-parte2 .contacto-footer p {
+    font-size: $sexto-tamanio;
+  }
+
+  /* Servicios */
+  .section-servicios {
+    margin-top: 2rem;
+  }
+
+  .section-servicios h1 {
+    font-size: $tercer-tamanio;
+  }
+  
+  .servicio {
+    padding: 0;
     img {
         height: 250px;
     }
     h2 {
-        margin-top: 10px;
+        font-size: $quinto-tamanio;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     p {
-        margin: 10px 0;
+        font-size: $sexto-tamanio;
+    }
+    .boton {
+      font-size: $octavo-tamanio;
+      font-weight: normal;
     }
   }
 

@@ -1,21 +1,29 @@
+// MIXINS
+
 // mediaqueries
 @mixin media($breakpoint) {
     @if $breakpoint == "smartphone-pequeño" {
-        @media (max-width: 480px) {
-            @content;
-        }
+        @media (max-width: 480px) { @content;}
     } @else if $breakpoint == "smartphone-grande" {
-        @media (min-width: 481px) and (max-width: 767px) {
-            @content;
-        }
+        @media (min-width: 480px) and (max-width: 767px) { @content; }
     } @else if $breakpoint == "tablet" {
-        @media (min-width: 767px) and (max-width: 1023px) {
-            @content;
-        }
+        @media (min-width: 767px) and (max-width: 1023px) { @content; }
     } @else if $breakpoint == "desktop" {
-        @media (min-width: 1023px) {
-            @content;
-        }
+        @media (min-width: 1023px) { @content; }
     }
 }
 
+// buttons
+@mixin boton($padding: 10px 20px, $color: $tercer-color, $background: $segundo-color, $border-r: none, $border: none, $font-weight:normal) {
+    display: inline-block;
+    padding: $padding;
+    color: $color;
+    background-color: $background;
+    text-decoration: none;
+    border-radius: $border-r;
+    border: $border;
+    font-weight: $font-weight;
+    position: relative;
+    overflow: hidden;
+    @content;
+  }

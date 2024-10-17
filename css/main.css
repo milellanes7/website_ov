@@ -14,39 +14,53 @@ a {
   text-decoration: none;
 }
 
+/* ===================================================================== */
+/* BOTONES*/
+/* ===================================================================== */
 .boton {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ef7a0f;
   color: white;
+  background-color: #ef7a0f;
   text-decoration: none;
   border-radius: 5px;
+  border: none;
+  font-weight: normal;
+  position: relative;
+  overflow: hidden;
 }
 
-.boton-portada {
+.boton2 {
   display: inline-block;
   padding: 10px 20px;
   color: white;
-  border: 2px solid #ef7a0f;
   background-color: transparent;
   text-decoration: none;
   border-radius: 5px;
+  border: 2px solid #ef7a0f;
+  font-weight: bold;
   position: relative;
   overflow: hidden;
-  font-weight: bold;
 }
 
-.formulario-contacto .btn {
+.boton3 {
+  display: inline-block;
+  padding: 10px 20px;
   color: #333;
-  border: 2px solid #ef7a0f;
   background-color: transparent;
+  text-decoration: none;
+  border-radius: none;
+  border: 2px solid #ef7a0f;
+  font-weight: normal;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Header */
+/* ===================================================================== */
+/* ANIMACIONES*/
+/* ===================================================================== */
+/* Animaciones - html Index */
 header .redes-sociales a {
-  color: #ad3da6;
-  font-size: 24px;
-  margin-right: 15px;
   transition: color 0.3s ease;
 }
 header .redes-sociales a:hover {
@@ -56,16 +70,14 @@ header .redes-sociales a:last-child {
   margin-right: 0;
 }
 
-/* Portada */
-.texto-portada .boton-portada {
+.texto-portada .boton2 {
   transition: color 0.3s ease;
 }
-.texto-portada .boton-portada:hover {
+.texto-portada .boton2:hover {
   background-color: #ef7a0f;
   color: white;
 }
 
-/* Rectángulos */
 .seccion-tres-rectangulos .rectangulo {
   transition: transform 0.3s ease;
 }
@@ -73,19 +85,6 @@ header .redes-sociales a:last-child {
   transform: scale(1.05);
 }
 
-/* Botón */
-.boton {
-  transition: background-color 0.3s ease;
-}
-.boton:hover {
-  background-color: #d4640d;
-}
-
-.formulario-contacto .btn:hover {
-  background-color: #ef7a0f;
-}
-
-/* Galeria */
 .galeria-index img {
   transition: transform 0.3s ease;
 }
@@ -94,7 +93,19 @@ header .redes-sociales a:last-child {
   transform: scale(1.05);
 }
 
-/* SERVICIOS */
+/* Animaciones - Botones */
+.boton {
+  transition: background-color 0.3s ease;
+}
+.boton:hover {
+  background-color: #d4640d;
+}
+
+.boton3:hover {
+  background-color: #ef7a0f;
+}
+
+/* Animaciones - html Servicios */
 .servicio {
   transition: all 0.3s ease;
 }
@@ -104,18 +115,26 @@ header .redes-sociales a:last-child {
   transform: translateY(-5px);
 }
 
+/* Animaciones - html Clientes */
+.fila-clientes img:hover {
+  transform: scale(1.1);
+}
+
+/* ===================================================================================== */
+/* HEADER */
+/* ===================================================================================== */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
-  padding: 0px 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding: 0px 20px;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
 }
 header .navbar {
   display: flex;
@@ -135,8 +154,15 @@ header .redes-sociales {
   display: flex;
   margin-left: auto;
 }
+header .redes-sociales a {
+  color: #ad3da6;
+  font-size: 24px;
+  margin-right: 15px;
+}
 
-/* Footer */
+/* ===================================================================== */
+/* FOOTER*/
+/* ===================================================================== */
 .container-footer {
   background-color: #ad3da6;
   color: white;
@@ -148,58 +174,53 @@ header .redes-sociales {
   min-height: 350px;
   margin-top: 30px;
 }
-
-.footer-parte1 {
+.container-footer .footer-parte1 {
   width: 50%;
   margin: 10px;
   padding: 80px 30px;
 }
-
-footer h2 {
+.container-footer .footer-parte1 h2 {
   margin: 0 0 20px 0;
-  font-size: 4.1rem;
+  font-size: 4rem;
   font-weight: bold;
   line-height: 1;
 }
-
-.footer-parte2 {
+.container-footer .footer-parte2 {
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 150px;
 }
-
-footer p {
-  font-size: 1.9rem;
+.container-footer .footer-parte2 p {
+  font-size: 2rem;
   font-weight: bold;
 }
-
-.contacto-footer {
+.container-footer .footer-parte2 .contacto-footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
   line-height: 1;
 }
-
-.contacto-footer p {
-  font-size: 1.4rem;
-  font-weight: bold;
+.container-footer .footer-parte2 .contacto-footer p {
+  font-size: 1.6rem;
 }
-
-.contacto-footer i {
+.container-footer .footer-parte2 .contacto-footer p i {
   margin-right: 15px;
 }
 
-/* Index */
+/* ===================================================================== */
+/* html INDEX*/
+/* ===================================================================== */
+/* 1. Portada */
 .portada {
   position: relative;
   text-align: left;
+  height: 100vh;
 }
 .portada img {
   width: 100%;
-  max-height: 700px;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 .portada::after {
@@ -224,10 +245,10 @@ footer p {
   position: relative;
   font-size: 4.8rem;
   font-weight: bold;
-  margin-bottom: 20px;
   text-align: left;
   line-height: 0.9;
   letter-spacing: -2px;
+  margin-bottom: 20px;
 }
 .portada .texto-portada .titulo-portada::before {
   content: "";
@@ -239,44 +260,43 @@ footer p {
   background-color: #ef7a0f;
 }
 .portada .texto-portada p {
-  color: rgb(226, 230, 230);
   font-size: 2rem;
   font-weight: bold;
+  color: #f9f9f9;
+  max-width: 90%;
   margin-bottom: 20px;
   line-height: 1.1;
   letter-spacing: -1.3px;
-  max-width: 90%;
 }
 
-/* Section de rectángulos */
+/* 2. Sección de tres rectángulos */
 .seccion-tres-rectangulos {
   font-family: "Mulish", sans-serif;
   display: flex;
   justify-content: space-around;
   padding: 40px 0;
-  background-color: #f9f9f9;
   text-align: left;
+  background-color: #f9f9f9;
 }
 .seccion-tres-rectangulos .rectangulo {
+  width: 32%;
   background-color: #ad3da6;
   color: white;
   padding: 25px;
   border-radius: 10px;
-  width: 32%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.seccion-tres-rectangulos .rectangulo h3 {
-  margin: 10px 0;
+.seccion-tres-rectangulos .rectangulo h2 {
+  font-size: 2rem;
   font-weight: bold;
-  font-size: 1.7rem;
   margin: 20px 0;
 }
 .seccion-tres-rectangulos .rectangulo p {
-  margin-bottom: 15px;
   font-size: 1.3rem;
+  margin-bottom: 15px;
 }
 
-/* Párrafos */
+/* 3. Párrafos index */
 .parrafo-index {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -292,7 +312,7 @@ footer p {
 }
 .parrafo-index .texto-izquierdo {
   width: 50%;
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   font-weight: bold;
   background: linear-gradient(to right, #ad3da6, #ef7a0f);
   -webkit-background-clip: text;
@@ -302,12 +322,12 @@ footer p {
 .parrafo-index .texto-derecho {
   width: 45%;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #333;
   line-height: 1.3;
 }
 
-/* Galeria de imagenes */
+/* 4. Galería de imágenes */
 .galeria-index {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -326,11 +346,14 @@ footer p {
   border-radius: 10px;
 }
 
+/* ===================================================================== */
+/* html SERVICIOS*/
+/* ===================================================================== */
 .section-servicios {
   padding: 60px 0;
 }
 .section-servicios h1 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   text-align: center;
   color: #333;
   font-weight: bold;
@@ -351,17 +374,19 @@ footer p {
   object-fit: cover;
 }
 .servicio h2 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: #ef7a0f;
   margin-top: 15px;
   font-weight: bold;
 }
 .servicio p {
-  font-size: 1rem;
   margin: 15px 0;
   color: #333;
 }
 
+/* ===================================================================== */
+/* html NOSOTROS*/
+/* ===================================================================== */
 .portada {
   margin-top: 10px;
 }
@@ -394,7 +419,7 @@ footer p {
   margin-bottom: 20px;
 }
 .grupo-trabajo .texto-grupo p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #333;
   line-height: 1.1;
 }
@@ -418,13 +443,13 @@ footer p {
   padding: 20px;
   text-align: left;
 }
-.contenido-nosotros .bloque .texto-izquierda h3 {
-  font-size: 1.8rem;
+.contenido-nosotros .bloque .texto-izquierda h2 {
+  font-size: 1.6rem;
   color: #ad3da6;
   margin-bottom: 10px;
 }
 .contenido-nosotros .bloque .texto-izquierda p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 20px;
 }
 .contenido-nosotros .bloque img {
@@ -433,45 +458,48 @@ footer p {
   border-radius: 5px;
 }
 
+/* ===================================================================== */
+/* html CLIENTES*/
+/* ===================================================================== */
 .clientes h1 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   text-align: center;
   margin-top: 120px;
   color: #333;
   font-weight: bold;
 }
 .clientes p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #333;
   line-height: 1.5;
   text-align: center;
 }
 .clientes .galeria-clientes {
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   padding-bottom: 40px;
   max-width: 90%;
 }
-.clientes .galeria-clientes .fila-clientes img {
+.clientes .fila-clientes img {
   width: 90%;
   object-fit: contain;
   transition: transform 0.3s ease;
   margin: 0 20px;
   justify-content: space-around;
 }
-.clientes .galeria-clientes .fila-clientes img:hover {
-  transform: scale(1.1);
-}
 
+/* ===================================================================== */
+/* html CONTACTO*/
+/* ===================================================================== */
 .container .contacto h1 {
-  font-size: 2.6rem;
+  font-size: 2.7rem;
   text-align: center;
   margin-top: 120px;
   color: #333;
   font-weight: bold;
 }
 .container .contacto p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding-bottom: 20px;
 }
 .container .contacto .row .col-md-8 .formulario-contacto {
@@ -488,10 +516,12 @@ footer p {
   border: 2px solid #ef7a0f;
   border-radius: 5px;
   padding: 10px;
-  font-size: 1rem;
 }
 
-/* Smartphones */
+/* ===================================================================== */
+/* MEDIAQUERIES*/
+/* ===================================================================== */
+/* 1. Smartphone Pequeño */
 @media (max-width: 480px) {
   /* Header */
   .navbar-toggler {
@@ -507,7 +537,7 @@ footer p {
     align-items: center;
   }
   .navbar-nav .nav-item {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .redes-sociales {
     display: flex;
@@ -521,9 +551,6 @@ footer p {
     padding-right: 15px;
   }
   /* Index - Portada*/
-  .portada {
-    margin-top: 80px;
-  }
   .portada .texto-portada {
     left: 5%;
     max-width: 90%;
@@ -535,15 +562,15 @@ footer p {
   }
   .portada .texto-portada p {
     font-size: 1rem;
-    max-width: 90%;
+    max-width: 100%;
     margin-bottom: 10px;
   }
-  .portada .boton-portada {
-    padding: 6px 6px;
+  .portada .boton2 {
+    padding: 7px 7px;
     color: white;
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
-  /* Index - Section Rectángulos */
+  /* Index - Rectangulos */
   .seccion-tres-rectangulos {
     display: flex;
     flex-direction: column;
@@ -563,23 +590,23 @@ footer p {
   }
   .seccion-tres-rectangulos .rectangulo.rectangulo p {
     margin-bottom: 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
-  /* Index - Section párrafos */
+  /* Index - Párrafos */
   .parrafo-index {
     flex-direction: column;
   }
   .parrafo-index .texto-izquierdo {
     width: 100%;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .parrafo-index .texto-derecho {
     width: 100%;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
-  /* Galeria */
+  /* Index - Galeria */
   .galeria-index {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
@@ -592,29 +619,40 @@ footer p {
   .container-footer {
     flex-direction: column;
     align-items: center;
-    text-align: left;
-    padding: 30px 30px;
+    text-align: center;
+    padding: 20px 20px;
   }
   .container-footer .footer-parte1, .footer-parte2 {
     width: 100%;
-    margin-bottom: 0;
   }
   .container-footer .footer-parte1 {
-    margin: 0;
-    padding: 0 0;
+    margin: 10px;
+    padding: 0 30px;
   }
   .container-footer .footer-parte1 h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .container-footer .footer-parte1 .boton {
+    font-size: 1rem;
+    padding: 10px 25px;
+    border-radius: 8px;
+  }
+  .container-footer .footer-parte2 {
+    width: 100%;
+    margin: 15px;
+    padding: 0 30px;
   }
   .container-footer .footer-parte2 p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
   }
   .container-footer .footer-parte2 .contacto-footer p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   /* Servicios */
   .section-servicios h1 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .servicio img {
     height: 200px;
@@ -624,11 +662,11 @@ footer p {
     margin-top: 10px;
   }
   .servicio p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 5px 0;
   }
-  .servicio .btn {
-    font-size: 0.9rem;
+  .servicio .boton {
+    font-size: 1rem;
     font-weight: normal;
   }
   /* Nosotros */
@@ -647,11 +685,11 @@ footer p {
     text-align: center;
   }
   .grupo-trabajo .texto-grupo h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
     margin-bottom: 10px;
   }
   .grupo-trabajo .texto-grupo p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .contenido-nosotros {
     display: flex;
@@ -674,12 +712,12 @@ footer p {
     padding: 5px;
   }
   .contenido-nosotros .bloque .texto-izquierda h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #ad3da6;
     margin-bottom: 5px;
   }
   .contenido-nosotros .bloque .texto-izquierda p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 5px;
   }
   .contenido-nosotros .bloque img {
@@ -687,10 +725,10 @@ footer p {
   }
   /* Clientes */
   .clientes h1 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .clientes p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0 15px;
   }
   .clientes .galeria-clientes {
@@ -710,22 +748,23 @@ footer p {
   }
   /* Contacto */
   .container .contacto h1 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .container .contacto p {
     padding: 0 5px 10px 5px;
   }
   .container .contacto .row .col-md-8 .formulario-contacto .mb-3 .form-label {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .container .contacto .row .col-md-8 .formulario-contacto .mb-3 .form-label i {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .container .contacto .row .col-md-8 .formulario-contacto .mb-3 input, .container .contacto .row .col-md-8 .formulario-contacto .mb-3 textarea {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
-@media (min-width: 481px) and (max-width: 767px) {
+/* 2. Smartphone Grande */
+@media (min-width: 480px) and (max-width: 767px) {
   /* Header */
   .navbar-toggler {
     border: none;
@@ -740,7 +779,7 @@ footer p {
     align-items: center;
   }
   .navbar-nav .nav-item {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .redes-sociales {
     display: flex;
@@ -762,19 +801,19 @@ footer p {
     max-width: 90%;
   }
   .portada .texto-portada .titulo-portada {
-    font-size: 2.7rem;
+    font-size: 3rem;
     margin-bottom: 10px;
     letter-spacing: -0.7px;
   }
   .portada .texto-portada p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     max-width: 90%;
     margin-bottom: 10px;
   }
-  .portada .boton {
+  .portada .boton2 {
     padding: 9px 9px;
     color: white;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
   /* Index - Section Rectángulos */
   .seccion-tres-rectangulos {
@@ -790,13 +829,13 @@ footer p {
     padding: 30px;
   }
   .seccion-tres-rectangulos .rectangulo.rectangulo h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
     margin-top: 15px;
   }
   .seccion-tres-rectangulos .rectangulo.rectangulo p {
     margin-bottom: 15px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   /* Index - Section párrafos */
   .parrafo-index {
@@ -805,56 +844,123 @@ footer p {
   .parrafo-index .texto-izquierdo {
     width: 100%;
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 2.7rem;
   }
   .parrafo-index .texto-derecho {
     width: 100%;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
-  /* Index - Footer */
+  /* Footer */
   .container-footer {
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    padding: 30px 30px;
+    padding: 10px 10px;
   }
   .container-footer .footer-parte1, .footer-parte2 {
     width: 100%;
-    margin-bottom: 5px;
+  }
+  .container-footer .footer-parte1 {
+    margin: 10px;
+    padding: 0 30px;
   }
   .container-footer .footer-parte1 h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
+  }
+  .container-footer .footer-parte2 {
+    width: 100%;
+    margin: 15px;
+    padding: 0 30px;
   }
   .container-footer .footer-parte2 p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-bottom: 7px;
   }
+  .container-footer .footer-parte2 .contacto-footer p {
+    font-size: 1.3rem;
+  }
   /* Servicios */
+  .section-servicios {
+    margin-top: 2rem;
+  }
   .section-servicios h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .servicio img {
     height: 250px;
   }
   .servicio h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-top: 5px;
+    margin-bottom: 0;
   }
   .servicio p {
-    font-size: 1.1rem;
-    margin: 10px 0;
+    font-size: 1.3rem;
   }
-  .servicio .btn {
-    font-size: 1.1rem;
+  .servicio .boton {
+    font-size: 1rem;
     font-weight: normal;
+  }
+  /* Nosotros */
+  .grupo-trabajo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .grupo-trabajo .imagen-grupo {
+    margin-right: 0px;
+  }
+  .grupo-trabajo .imagen-grupo img {
+    margin: 15px 0;
+  }
+  .grupo-trabajo .texto-grupo {
+    text-align: center;
+  }
+  .grupo-trabajo .texto-grupo h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .grupo-trabajo .texto-grupo p {
+    font-size: 1.6rem;
+  }
+  .contenido-nosotros {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .contenido-nosotros .titulo-nosotros {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .contenido-nosotros .bloque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .contenido-nosotros .bloque .texto-izquierda {
+    text-align: center;
+    padding: 5px;
+  }
+  .contenido-nosotros .bloque .texto-izquierda h3 {
+    font-size: 1.6rem;
+    color: #ad3da6;
+    margin-bottom: 5px;
+  }
+  .contenido-nosotros .bloque .texto-izquierda p {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  .contenido-nosotros .bloque img {
+    width: 90%;
   }
   /* Clientes */
   .clientes h1 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
   .clientes p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0 15px;
   }
   .clientes .galeria-clientes {
@@ -876,19 +982,20 @@ footer p {
     font-size: 2rem;
   }
   .container .contacto p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding: 0 5px 10px 5px;
   }
   .container .contacto .row .col-md-8 .formulario-contacto .mb-3 .form-label {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .container .contacto .row .col-md-8 .formulario-contacto .mb-3 .form-label i {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .container .contacto .row .col-md-8 .formulario-contacto .mb-3 input, .container .contacto .row .col-md-8 .formulario-contacto .mb-3 textarea {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 }
+/* 3. Tablet */
 @media (min-width: 767px) and (max-width: 1023px) {
   /* Header */
   .navbar-toggler {
@@ -904,15 +1011,15 @@ footer p {
     align-items: center;
   }
   .navbar-nav .nav-item {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
   .redes-sociales {
     display: flex;
     justify-content: center;
   }
   .redes-sociales a .fab {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
   }
   .redes-sociales a .fa-instagram {
     padding-right: 17px;
@@ -931,20 +1038,20 @@ footer p {
     letter-spacing: -0.7px;
   }
   .portada .texto-portada p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     max-width: 90%;
     margin-bottom: 15px;
   }
-  .portada .boton {
+  .portada .boton2 {
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   /* Index - Section Rectángulos */
   .seccion-tres-rectangulos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 0 0 0;
+    padding-top: 30px;
     margin-top: 10px;
     text-align: center;
   }
@@ -954,16 +1061,16 @@ footer p {
     padding: 30px;
   }
   .seccion-tres-rectangulos .rectangulo.rectangulo h3 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: bold;
     margin-top: 15px;
   }
   .seccion-tres-rectangulos .rectangulo.rectangulo p {
     margin-bottom: 15px;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .seccion-tres-rectangulos .rectangulo.rectangulo .boton {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 20px 40px;
     border-radius: 8px;
   }
@@ -974,7 +1081,7 @@ footer p {
   .parrafo-index .texto-izquierdo {
     width: 100%;
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   .parrafo-index .texto-derecho {
     width: 100%;
@@ -985,8 +1092,8 @@ footer p {
   .galeria-index {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 5px;
+    padding: 10px;
   }
   .galeria-index img {
     width: 100%;
@@ -994,7 +1101,7 @@ footer p {
     object-fit: cover;
     border-radius: 10px;
   }
-  /* Index - Footer */
+  /* Footer */
   .container-footer {
     flex-direction: column;
     align-items: center;
@@ -1003,31 +1110,56 @@ footer p {
   }
   .container-footer .footer-parte1, .footer-parte2 {
     width: 100%;
-    margin-bottom: 15px;
+  }
+  .container-footer .footer-parte1 {
+    margin: 10px;
+    padding: 0 30px;
   }
   .container-footer .footer-parte1 h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    margin-bottom: 20px;
   }
   .container-footer .footer-parte1 .boton {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     padding: 15px 30px;
     border-radius: 8px;
   }
+  .container-footer .footer-parte2 {
+    width: 100%;
+    margin: 15px;
+    padding: 0 30px;
+  }
   .container-footer .footer-parte2 p {
-    font-size: 1.7rem;
-    margin-bottom: 10px;
+    font-size: 2.7rem;
+    margin-bottom: 15px;
   }
-  .section-servicios .servicio {
-    padding: 0px;
+  .container-footer .footer-parte2 .contacto-footer p {
+    font-size: 1.6rem;
   }
-  .section-servicios .servicio img {
+  /* Servicios */
+  .section-servicios {
+    margin-top: 2rem;
+  }
+  .section-servicios h1 {
+    font-size: 3rem;
+  }
+  .servicio {
+    padding: 0;
+  }
+  .servicio img {
     height: 250px;
   }
-  .section-servicios .servicio h2 {
-    margin-top: 10px;
+  .servicio h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
   }
-  .section-servicios .servicio p {
-    margin: 10px 0;
+  .servicio p {
+    font-size: 1.6rem;
+  }
+  .servicio .boton {
+    font-size: 1rem;
+    font-weight: normal;
   }
   /* Clientes */
   .clientes h1 {

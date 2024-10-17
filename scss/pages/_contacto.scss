@@ -1,14 +1,18 @@
+/* ===================================================================== */
+/* html CONTACTO*/
+/* ===================================================================== */
+
 .container {
     .contacto {
       h1 {
-        font-size: 2.6rem;
+        font-size: $cuarto-tamanio;
         text-align: center;
         margin-top: 120px;
         color: $quinto-color;
         font-weight: bold;
       }
       p {
-        font-size: 1.5rem;
+        font-size: $septimo-tamanio;
         padding-bottom: 20px;
       }
       .row {
@@ -27,7 +31,6 @@
                 border: 2px solid $segundo-color;
                 border-radius: 5px;
                 padding: 10px;
-                font-size: 1rem;
               }
             }
           }
